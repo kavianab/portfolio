@@ -5,7 +5,6 @@
 .w*{box-sizing:border-box;margin:0;padding:0;}
 .w{font-family:'Inter',sans-serif;background:#fff;color:#111;min-height:100vh;}
 
-/* Nav */
 .w-nav{
   position:sticky;top:0;z-index:100;
   display:flex;align-items:center;justify-content:space-between;
@@ -17,7 +16,6 @@
 .w-nav-links a{font-size:13px;color:#999;text-decoration:none;transition:color 0.2s;}
 .w-nav-links a:hover,.w-nav-links a.active{color:#111;}
 
-/* Hero */
 .w-hero{
   display:grid;grid-template-columns:1fr 1.4fr;
   min-height:420px;border-bottom:1px solid #f0f0f0;
@@ -27,7 +25,6 @@
   display:flex;align-items:center;justify-content:center;
   border-right:1px solid #f0f0f0;
   min-height:380px;
-  position:relative;overflow:hidden;
 }
 .w-img-placeholder{
   display:flex;flex-direction:column;align-items:center;justify-content:center;
@@ -35,16 +32,11 @@
 }
 .w-img-placeholder i{font-size:28px;color:#d4c9a8;}
 .w-hero-content{padding:3.5rem 2.5rem;display:flex;flex-direction:column;justify-content:center;}
-.w-hero-tag{
-  font-size:11px;letter-spacing:0.18em;text-transform:uppercase;
-  color:#b8952a;margin-bottom:1.25rem;
-}
 .w-hero h1{
   font-family:'Cormorant Garamond',serif;
-  font-size:52px;font-weight:300;line-height:1.0;
+  font-size:58px;font-weight:300;line-height:1.0;
   color:#111;margin-bottom:1.5rem;letter-spacing:-0.01em;
 }
-.w-hero h1 em{font-style:italic;color:#1a2744;}
 .w-hero-bio{
   font-size:14px;font-weight:300;line-height:1.8;
   color:#666;margin-bottom:2rem;max-width:400px;
@@ -58,12 +50,8 @@
 }
 .w-cta:hover{background:#b8952a;}
 
-/* Stats bar */
 .w-stats{display:flex;border-bottom:1px solid #f0f0f0;}
-.w-stat{
-  flex:1;padding:1.75rem 2rem;
-  border-right:1px solid #f0f0f0;
-}
+.w-stat{flex:1;padding:1.75rem 2rem;border-right:1px solid #f0f0f0;}
 .w-stat:last-child{border-right:none;}
 .w-stat-val{
   font-family:'Cormorant Garamond',serif;
@@ -71,7 +59,6 @@
 }
 .w-stat-label{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#bbb;}
 
-/* Section */
 .w-section{padding:4rem 2rem;border-bottom:1px solid #f0f0f0;}
 .w-section-eyebrow{
   font-size:11px;letter-spacing:0.16em;text-transform:uppercase;
@@ -80,14 +67,12 @@
 }
 .w-section-eyebrow::after{content:'';height:1px;width:40px;background:#f0e8d0;}
 
-/* Work grid */
 .w-work-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#f0f0f0;}
 .w-project{background:#fff;padding:0;}
 .w-project-img{
   background:#f5f3ef;height:200px;
   display:flex;align-items:center;justify-content:center;
   border-bottom:1px solid #f0f0f0;
-  position:relative;overflow:hidden;
 }
 .w-project-img span{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#ccc;}
 .w-project-body{padding:1.5rem;}
@@ -103,14 +88,12 @@
   padding:3px 10px;border:1px solid #e8e0cc;color:#b8952a;
 }
 
-/* Experience */
 .w-exp-list{display:flex;flex-direction:column;}
 .w-exp-row{
   display:grid;grid-template-columns:140px 1fr;gap:3rem;
   padding:2rem 0;border-bottom:1px solid #f5f5f5;align-items:start;
 }
 .w-exp-row:last-child{border-bottom:none;}
-.w-exp-left{}
 .w-exp-co{font-size:13px;font-weight:500;color:#1a2744;margin-bottom:2px;}
 .w-exp-date{font-size:11px;color:#bbb;letter-spacing:0.04em;}
 .w-exp-title{
@@ -119,18 +102,13 @@
 }
 .w-exp-desc{font-size:13px;font-weight:300;color:#777;line-height:1.7;}
 
-/* Certifications */
 .w-cert-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:#f0f0f0;}
-.w-cert{
-  background:#fff;padding:1.5rem;
-  transition:background 0.2s;
-}
+.w-cert{background:#fff;padding:1.5rem;transition:background 0.2s;}
 .w-cert:hover{background:#faf8f3;}
 .w-cert-year{font-size:11px;color:#b8952a;letter-spacing:0.1em;margin-bottom:8px;}
 .w-cert h4{font-size:13px;font-weight:500;color:#111;margin-bottom:3px;}
 .w-cert p{font-size:12px;color:#aaa;font-weight:300;}
 
-/* Notable */
 .w-notable-list{display:flex;flex-direction:column;}
 .w-notable-row{
   display:grid;grid-template-columns:80px 1fr 80px;gap:2.5rem;
@@ -142,7 +120,6 @@
 .w-notable-desc{font-size:12px;color:#aaa;font-weight:300;}
 .w-notable-year{font-size:12px;color:#bbb;text-align:right;}
 
-/* Footer */
 .w-footer{
   padding:2rem;display:flex;align-items:center;justify-content:space-between;
   background:#1a2744;
@@ -151,14 +128,12 @@
 .w-footer-links{display:flex;gap:2rem;}
 .w-footer-links a{font-size:12px;color:#4a6080;text-decoration:none;letter-spacing:0.06em;transition:color 0.2s;}
 .w-footer-links a:hover{color:#b8952a;}
-
-.ph{display:inline-block;font-size:9px;padding:1px 5px;background:#fdf6e3;color:#b8952a;letter-spacing:0.06em;margin-left:6px;vertical-align:middle;font-family:'Inter',sans-serif;border:1px solid #f0e8cc;}
 </style>
 
 <div class="w">
 
   <nav class="w-nav">
-    <span class="w-logo">Your Name <span class="ph">placeholder</span></span>
+    <span class="w-logo">Kavian Abhari</span>
     <div class="w-nav-links">
       <a href="#work" class="wl">Work</a>
       <a href="#experience" class="wl">Experience</a>
@@ -175,10 +150,9 @@
       </div>
     </div>
     <div class="w-hero-content">
-      <p class="w-hero-tag">Strategic Creative &nbsp;·&nbsp; Interactive Entertainment <span class="ph">placeholder</span></p>
-      <h1>Making work<br>that <em>matters</em></h1>
+      <h1>Kavian Abhari</h1>
       <p class="w-hero-bio">
-        A short, clear statement about who you are and what you do. What's your <em>singular strength</em>? What kind of work do you make possible? Two to three sentences. <span class="ph">placeholder</span>
+        A short, clear statement about who you are and what you do. What's your <em>singular strength</em>? What kind of work do you make possible? Two to three sentences.
       </p>
       <a class="w-cta" href="#work">View work</a>
     </div>
@@ -186,19 +160,15 @@
 
   <div class="w-stats">
     <div class="w-stat">
-      <div class="w-stat-val">0+ <span class="ph">placeholder</span></div>
+      <div class="w-stat-val">10+</div>
       <div class="w-stat-label">Years</div>
     </div>
     <div class="w-stat">
-      <div class="w-stat-val">00 <span class="ph">placeholder</span></div>
+      <div class="w-stat-val">20</div>
       <div class="w-stat-label">Projects</div>
     </div>
     <div class="w-stat">
-      <div class="w-stat-val">00 <span class="ph">placeholder</span></div>
-      <div class="w-stat-label">Clients</div>
-    </div>
-    <div class="w-stat">
-      <div class="w-stat-val">00 <span class="ph">placeholder</span></div>
+      <div class="w-stat-val">10+</div>
       <div class="w-stat-label">Industries</div>
     </div>
   </div>
@@ -210,7 +180,7 @@
         <div class="w-project-img"><span>Project image</span></div>
         <div class="w-project-body">
           <p class="w-project-num">01</p>
-          <h3>Project Title <span class="ph">placeholder</span></h3>
+          <h3>Project Title</h3>
           <p>What this project was, your role, and the outcome. What changed because of this work?</p>
           <div class="w-project-tags"><span class="w-ptag">Branding</span><span class="w-ptag">Direction</span><span class="w-ptag">2024</span></div>
         </div>
@@ -219,7 +189,7 @@
         <div class="w-project-img"><span>Project image</span></div>
         <div class="w-project-body">
           <p class="w-project-num">02</p>
-          <h3>Project Title <span class="ph">placeholder</span></h3>
+          <h3>Project Title</h3>
           <p>The creative challenge and how you navigated it. One concrete result is worth ten descriptors.</p>
           <div class="w-project-tags"><span class="w-ptag">UX</span><span class="w-ptag">Systems</span><span class="w-ptag">2023</span></div>
         </div>
@@ -228,7 +198,7 @@
         <div class="w-project-img"><span>Project image</span></div>
         <div class="w-project-body">
           <p class="w-project-num">03</p>
-          <h3>Project Title <span class="ph">placeholder</span></h3>
+          <h3>Project Title</h3>
           <p>A third project showing range — different medium or context, or a speculative personal work.</p>
           <div class="w-project-tags"><span class="w-ptag">Motion</span><span class="w-ptag">Narrative</span><span class="w-ptag">2023</span></div>
         </div>
@@ -237,7 +207,7 @@
         <div class="w-project-img"><span>Project image</span></div>
         <div class="w-project-body">
           <p class="w-project-num">04</p>
-          <h3>Project Title <span class="ph">placeholder</span></h3>
+          <h3>Project Title</h3>
           <p>Fourth project — a collaboration, client work, or open project that rounds out the body of work.</p>
           <div class="w-project-tags"><span class="w-ptag">Strategy</span><span class="w-ptag">2022</span></div>
         </div>
@@ -249,32 +219,32 @@
     <p class="w-section-eyebrow">Experience</p>
     <div class="w-exp-list">
       <div class="w-exp-row">
-        <div class="w-exp-left">
-          <div class="w-exp-co">Company Name <span class="ph">placeholder</span></div>
+        <div>
+          <div class="w-exp-co">Company Name</div>
           <div class="w-exp-date">2022 – Present</div>
         </div>
         <div>
-          <div class="w-exp-title">Senior Role Title <span class="ph">placeholder</span></div>
+          <div class="w-exp-title">Senior Role Title</div>
           <p class="w-exp-desc">What you led, built, or shaped here. What would not exist without your contribution?</p>
         </div>
       </div>
       <div class="w-exp-row">
-        <div class="w-exp-left">
-          <div class="w-exp-co">Previous Company <span class="ph">placeholder</span></div>
+        <div>
+          <div class="w-exp-co">Previous Company</div>
           <div class="w-exp-date">2019 – 2022</div>
         </div>
         <div>
-          <div class="w-exp-title">Mid-level Role <span class="ph">placeholder</span></div>
+          <div class="w-exp-title">Mid-level Role</div>
           <p class="w-exp-desc">Key contribution and your most significant achievement. What was the turning point?</p>
         </div>
       </div>
       <div class="w-exp-row">
-        <div class="w-exp-left">
-          <div class="w-exp-co">First Studio <span class="ph">placeholder</span></div>
+        <div>
+          <div class="w-exp-co">First Studio</div>
           <div class="w-exp-date">2016 – 2019</div>
         </div>
         <div>
-          <div class="w-exp-title">Junior Role <span class="ph">placeholder</span></div>
+          <div class="w-exp-title">Junior Role</div>
           <p class="w-exp-desc">Where you began and what you learned early that still informs how you work today.</p>
         </div>
       </div>
@@ -286,22 +256,22 @@
     <div class="w-cert-grid">
       <div class="w-cert">
         <div class="w-cert-year">2024</div>
-        <h4>Certification Name <span class="ph">placeholder</span></h4>
+        <h4>Certification Name</h4>
         <p>Issuing Body</p>
       </div>
       <div class="w-cert">
         <div class="w-cert-year">2023</div>
-        <h4>Certification Name <span class="ph">placeholder</span></h4>
+        <h4>Certification Name</h4>
         <p>Issuing Body</p>
       </div>
       <div class="w-cert">
         <div class="w-cert-year">2022</div>
-        <h4>Certification Name <span class="ph">placeholder</span></h4>
+        <h4>Certification Name</h4>
         <p>Issuing Body</p>
       </div>
       <div class="w-cert">
         <div class="w-cert-year">2021</div>
-        <h4>Certification Name <span class="ph">placeholder</span></h4>
+        <h4>Certification Name</h4>
         <p>Issuing Body</p>
       </div>
     </div>
@@ -313,7 +283,7 @@
       <div class="w-notable-row">
         <div class="w-notable-type">Award</div>
         <div>
-          <div class="w-notable-title">Award or Recognition <span class="ph">placeholder</span></div>
+          <div class="w-notable-title">Award or Recognition</div>
           <div class="w-notable-desc">Issued by, for what work, and why it matters in your field.</div>
         </div>
         <div class="w-notable-year">2024</div>
@@ -321,7 +291,7 @@
       <div class="w-notable-row">
         <div class="w-notable-type">Press</div>
         <div>
-          <div class="w-notable-title">Publication or Feature <span class="ph">placeholder</span></div>
+          <div class="w-notable-title">Publication or Feature</div>
           <div class="w-notable-desc">Media outlet that featured your work or perspective.</div>
         </div>
         <div class="w-notable-year">2023</div>
@@ -329,7 +299,7 @@
       <div class="w-notable-row">
         <div class="w-notable-type">Speaking</div>
         <div>
-          <div class="w-notable-title">Event or Conference <span class="ph">placeholder</span></div>
+          <div class="w-notable-title">Event or Conference</div>
           <div class="w-notable-desc">Where you spoke, what topic, and the audience.</div>
         </div>
         <div class="w-notable-year">2023</div>
@@ -337,7 +307,7 @@
       <div class="w-notable-row">
         <div class="w-notable-type">Community</div>
         <div>
-          <div class="w-notable-title">Initiative or Cause <span class="ph">placeholder</span></div>
+          <div class="w-notable-title">Initiative or Cause</div>
           <div class="w-notable-desc">What you contribute beyond client work.</div>
         </div>
         <div class="w-notable-year">2022</div>
@@ -346,7 +316,7 @@
   </section>
 
   <footer class="w-footer">
-    <span class="w-footer-copy">© 2026 Your Name</span>
+    <span class="w-footer-copy">© 2026 Kavian Abhari</span>
     <div class="w-footer-links">
       <a href="#">LinkedIn</a>
       <a href="#">Behance</a>
